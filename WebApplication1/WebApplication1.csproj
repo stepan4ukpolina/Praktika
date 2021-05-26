@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Shared\FooterPartial.cshtml" />
+    <Content Remove="Views\Shared\HeaderPartial.cshtml" />
+    <Content Remove="Views\Shared\MainPartial.cshtml" />
+    <Content Remove="Views\Shared\_Layout.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Controllers\" />
+    <Folder Include="Areas\Admin\Views\" />
+    <Folder Include="Models\ViewComponents\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Domain\" />
+    <Folder Include="Service\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Shared\FooterPartial.cshtml" />
+    <None Include="Views\Shared\MainPartial.cshtml" />
+    <None Include="Views\Shared\HeaderPartial.cshtml" />
+    <None Include="Views\Shared\_Layout.cshtml" />
+    <None Include="wwwroot\js\site.js" />
+  </ItemGroup>
+
+</Project>
